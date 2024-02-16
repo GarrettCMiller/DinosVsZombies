@@ -1,0 +1,84 @@
+Mountains
+	Strength	1.357
+	Perlin
+		Zoom	2.998
+	Height Select0 Always Add
+		Strength	0.2
+		Perlin
+			Zoom		461
+			Detail		6
+			Detail Str	2
+			O(x,y)		(-44.252, -26.321)
+	Height Select1 Always Add
+		Strength	0.094
+		Perlin
+			Zoom		390
+			Detail		6
+			Detail Str	2
+			O(x,y)		(-145.953, 149.108)
+	Height Select2 Always Add
+		Strength	0.963
+		Perlin
+			Zoom		390
+			Detail		10
+			Detail Str	2
+			O(x,y)		(-145.953, 149.108)
+		Normal Curve	0-1, exp increase
+	Height Select3 Always Change Filter
+		Mask Strength Always Max
+			Pos	0.25
+			Perlin
+				Zoom		660
+				Detail		5
+				Detail Str	2
+Canyons
+	Strength	0.475
+	Height Select0 Always Add (Same as Mountain 0)
+	Height Select1 Always Add (Same as Mountain 1)
+	Height Select2 Always Add
+		Pos		0.5
+		Strength	0.5
+		Perlin
+			Zoom		390
+			Detail		12
+			Detail Str	3.55
+			O(x,y)		(-145.953, 149.108)
+		Normal Curve (terraced cliff)
+	Height Select3 Always Add
+		Pos		0.5
+		Strength	0.5
+		Perlin
+			Zoom		335
+			Detail		12
+			Detail Str	3.55
+			O(x,y)		(-145.953, 149.108)
+		Normal Curve (terraced cliff)
+	Height Select4 Always Change Filter
+		Strength	0.5
+		Mask Strength Always Max
+			Pos	0.766
+			Perlin
+				Zoom		1195
+				Detail		1
+				Detail Str	2
+Plateaus
+	Perlin
+		Zoom	2
+		O(x,y)	(0.5, -0.5)
+	Height Select0 Always Add (Same as Mountain 0)
+	Height Select1 Always Add (Same as Mountain 1)
+	Height Select2 Always Add
+		Perlin
+			Zoom		390
+			Detail		12
+			Detail Str	3.55
+			O(x,y)		(-145.953, 149.108)
+		Normal Curve (terraced cliff)
+	Height Select3 Always Change Filter
+		Strength	0.5
+		Mask Strength Always Max
+			Pos	0.236
+			Perlin
+				Zoom		1195
+				Detail		1
+				Detail Str	2

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{32BBC9E1-AE42-61BE-5CC6-1F5F795D60D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;PLAYMAKER;PLAYMAKER_1_8</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Standard Assets\Editor\Custom Attributes\Editor\DictionaryDrawer.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\Custom Attributes\Editor\ExpressionDrawer.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\Decal System\Decal.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\Decal System\DecalMode.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\Decal System\DecalPolygon.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\DecalEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\DecalUVEditorWindow.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\LSystemEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\NewScriptGenerator.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\NewScriptWindow.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\NormalizedRect.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ProteiNA\GenericGenotypeEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ProteiNA\GenericSpeciesEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ProteiNA\ParticleSystemGenotypeEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ProteiNA\ParticleSystemSpeciesEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ProteiNA\ProteiNAMainEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ProteiNA\ProteiNAScriptCreator.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ProteiNA\TerrainToolkitGenomeEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ProteiNA\TerrainToolkitSpeciesEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ScriptPrescription.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\TerrainToolkitEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\TerrainToolkitExtension.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\TerrainUtility.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\TerrainUtilityEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\TransformCopier.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\_Mine\EditorGUIExtensions.cs" />
+     <None Include="Assets\ReliefPack\Shaders\CustomLighting.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_HB U5.shader" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\readme_treeBarkShader.txt" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Pro Standard Assets\Glass Refraction\Glass-Stained-BumpDistort.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\New Module.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders\PlanetDataInc.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\ReliefPack\verinfo.txt" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Shaders\BumpedPlanetPoleTexture.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\VertexControl\UnityPBSLighting.cginc" />
+     <None Include="Assets\MORPH3D\Content\Vendor\Unity\Volund\Features\Shared\UnityStandardSurface.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\FoliagePerlin.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\FogVolume.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\RTP_TessShadowCaster.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Customizable&amp;Standalone\CustomizableShader2Layers(PBL)_geomblend.shader" />
+     <None Include="Assets\MORPH3D\Content\Vendor\Unity\Volund\Features\Hair\Hair_Standard.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\ClearTexture.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Internal-DeferredShading_RTP.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Customizable&amp;Standalone\UnityPBSLighting.cginc" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Shaders\Glass.shader" />
+     <None Include="Assets\3rd Party\Buildr\XML\none.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ConfigurableCore.cginc" />
+     <None Include="Assets\3rd Party\Buildr\XML\georgianTextures.xml" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Customizable&amp;Standalone\ReliefTerrainPMTriplanarStandalone_geomblend.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\UnityPBSLighting.cginc" />
+     <None Include="Assets\PlayMaker\Templates\readme.txt" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\Water\WaterShader_2VertexPaint.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Clouds\Noise3DSupportInc.cginc" />
+     <None Include="Assets\FirstAttempt.txt" />
+     <None Include="Assets\MORPH3D\Content\Shaders\StandardSpecular-doublesided.shader" />
+     <None Include="Assets\ReliefPack\Models\ReliefTerrain\Michael O. demo stuff\courtesy info.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Utility\DownsampleZ.shader" />
+     <None Include="Assets\3rd Party\XInputDotNet\MITLicense.txt" />
+     <None Include="Assets\3rd Party\Buildr\XML\hongKongTextures.xml" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\readme_grassShader.txt" />
+     <None Include="Assets\3rd Party\Voxeland\Shaders\TerrainAmbientOnly.shader" />
+     <None Include="Assets\PlayMaker\Readme.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\RenderSatellites.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\Crater.txt" />
+     <None Include="Assets\3rd Party\Buildr\XML\hongKongStyle.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\2xParallaxMapped\GeometryBlend_PM_2VertexPaint_HB_COMPLEX.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Foliage\SoftOcclusion\TreeSoftOcclusionLeaves.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\ParallaxMapped\GeometryBlend_PM_HB_COMPLEX.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\Max.txt" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Internal\ReliefTerrain2GeometryBlendBase.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\ParallaxMapped\GeometryBlend_PM_HB.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\3rd Party\Buildr\XML\alltextures.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\ReliefPack\Shaders\UBER_CopyPropsTexture.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\TextureLoad.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\AerialPerspectiveComplexInc.cginc" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Pro Standard Assets\Glass Refraction\Particle Add.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\Customizable\CustomizableShader1Layer.shader" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\atsV2 billboardShader package\TreeCreatorLeavesRendertex.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\VertexControl\ReliefTerrainPMTriplanarStandalone.shader" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\atsV2 billboardShader package\TreeCreatorBarkRendertex.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\3rd Party\Inventory\Credits + C#.txt" />
+     <None Include="Assets\FirstAttemptTerrainComposer.txt" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\MORPH3D\Content\Vendor\Unity\Volund\Features\UniqueShadow\UniqueShadow_ShadowSample.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\LegacyLighting\PM&amp;Caustics.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\RenderEnvironmentSimple.shader" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\ats pathShader Package\Shader\ats Road Path bumped diffuse alphatest.shader" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Shaders\Alpha-Cancel.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\ReliefTerrain-FirstPass.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\3rd Party\Buildr\versionlog.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\ToneMapping.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\GeometryBlend_BumpedDetailSnow.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Header.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\MORPH3D\Content\Vendor\Unity\Volund\Features\Shared\Volund_StandardCharacterSpecularSurface.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\RenderEnvironmentSimple.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Customizable&amp;Standalone\CustomizableShader1Layer(PBL)_geomblend.shader" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\ats vertexLitShader Package\Shader\atsv2 vertexlit.shader" />
+     <None Include="Assets\Standard Assets\TerrainToolkit\Read me.txt" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Shaders\Colored Planet Unpacked.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Utility\ImageScalerLog.shader" />
+     <None Include="Assets\3rd Party\Voxeland\Shaders\TerrainBump4.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\Water\WaterShader_FlowMap_2VertexPaint.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\MyMountains.txt" />
+     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_Noise.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\LegacyLighting\BumpedSpecular&amp;Caustics.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\RTP_Base.cginc" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\atsV2 grassShader Package\atsV2WavingGrass.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Shaders\BumpedPlanet.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\2xParallaxMapped\GeometryBlend_PM_2VertexPaint_HB.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\GeometryBlend_BumpedSpecular.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\ToneMapping.shader" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Shaders\Particle Alpha Blend.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\RenderEnvironmentComplex.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\AerialPerspectiveSimpleInc.cginc" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Pro Standard Assets\Image Based\frag_ao.cginc" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\readme_billboardShader.txt" />
+     <None Include="Assets\MORPH3D\Readme.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders\ComposeAtmosphere.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Standard\GeomBlend_Standard.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Planet\PlanetaryTerrain guidelines.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\RenderLightCookie.shader" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Shaders\WaterShader.shader" />
+     <None Include="Assets\3rd Party\Voxeland\Shaders\Terrain4Triplanar.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Clouds\CloudVolumeShadow.shader" />
+     <None Include="Assets\3rd Party\Voxeland\Shaders\Sky.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\CloudVolume.shader" />
+     <None Include="Assets\ReliefPack\readme.txt" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Water\Water.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Clouds\CloudVolume.shader" />
+     <None Include="Assets\3rd Party\Buildr\XML\georgianStyle.xml" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Pro Standard Assets\Glass Refraction\Glass-Stained-BumpSpecDistort.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\layer count info.txt" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader U5.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\AerialPerspectiveComplex.shader" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\atsV2 billboardShader package\Tree.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\Customizable\CustomizableShader2Layers.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Satellites\RenderSatellites.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\LegacyLighting\PM_2VertexPaint.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\AerialPerspectiveComplex.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\ToneMappingInc.cginc" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\RenderEnvironmentComplex.shader" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Pro Standard Assets\Glass Refraction\Glass-Stained-BumpDistort 1.shader" />
+     <None Include="Assets\Main Assets\Models\ninja\ninja animation ranges.txt" />
+     <None Include="Assets\MORPH3D\Content\Shaders\Standard-doublesided.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\BuildDensityTexture.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\ShadowMapInc.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Planet\ReliefTerrainTriplanarPlanet.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Planet\UnityPBSLighting.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_FlowMap U5.shader" />
+     <None Include="Assets\ReliefPack\OpenFootage\_info.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Satellites\RenderSatellitesInc.cginc" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Shaders\Particle Add NoFog.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\FirstAttempt.txt" />
+     <None Include="Assets\MORPH3D\Content\Shaders\Standard-2pass-doublesided-half depth.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Clouds\FogVolumeInc.cginc" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Clouds\CloudVolumeInc.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Clouds\CloudLayer.shader" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\readme_terrainBumpShader.txt" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\LegacyLighting\BumpedSpecular&amp;SnowSimple.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Clouds\FogVolume.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Customizable&amp;Standalone\ReliefTerrainPMStandalone_geomblend.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_2VertexPaint U5.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\ComposeReflection.shader" />
+     <None Include="Assets\ReliefPack\Textures\ReliefTerrain\Combined\info.txt" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\atsV2 UnityTerrainBump Package\TerrainReplacementAtsV2.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Shaders\MeshTerrain4Splats.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\LegacyLighting\BumpedSpecular&amp;Snow.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\ReliefTerrain2Geometry.shader" />
+     <None Include="Assets\ReliefPack\Textures\ReliefTerrain\Planet\texture_info.txt" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Internal\UnityPBSLighting.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\ImageScalerLog.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Utility\ClearTexture.shader" />
+     <None Include="Assets\3rd Party\Voxeland\Shaders\Terrain4.shader" />
+     <None Include="Assets\3rd Party\Buildr\readme.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\RenderEnvironmentNone.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\AerialPerspectiveNone.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReplacementPBSLighting.cginc" />
+     <None Include="Assets\MORPH3D\Content\Vendor\Unity\Volund\Features\Shared\UnityPBSLighting.cginc" />
+     <None Include="Assets\MORPH3D\Content\Shaders\Standard-2pass-doublesided.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\000_readme_Making_GeomBlend_Compliant_Shaders.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Shaders\Normal-Diffuse NoFog.shader" />
+     <None Include="Assets\3rd Party\Buildr\XML\parisstyle.xml" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\ImageScaler.shader" />
+     <None Include="Assets\3rd Party\Voxeland\Shaders\TerrainBump4Triplanar.shader" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Pro Standard Assets\Glass Refraction\Glass-Stained-BumpDistort 2.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\VertexControl\ReliefTerrainPMTriplanarStandalone - PolyBrush.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\Customizable\UnityPBSLighting.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\ReliefTerrain-AddPass.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\Water\WaterShader_FlowMap.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Standard\UnityStandardCore.cginc" />
+     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\ReliefPack\newestChangeLog.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders\LocalVariationsInc.cginc" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\Small.txt" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\IQ.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Standard\UnityStandardInput.cginc" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\RenderEnvironmentNone.shader" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Pro Standard Assets\Water\Sources\FX-Water.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Foliage\SoftOcclusion\SH_Vertex.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\ReliefPack\ExampleScenes\ReliefTerrain\TerrainScene Assets\flowMap_generation.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\ComposeAtmosphere.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Shaders\BumpedPlanetColorMap.shader" />
+     <None Include="Assets\3rd Party\Buildr\Textures\license.txt" />
+     <None Include="Assets\Main Assets\_SECOND CHANCE\Prefabs\LetterFindPlate.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\CloudLayer.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\3rd Party\Buildr\XML\paristextures.xml" />
+     <None Include="Assets\MORPH3D\Content\Vendor\Unity\Volund\Features\Hair\Hair_setup.cginc" />
+     <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders\LightSupportInc.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Utility\ImageScaler.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Clouds\CloudLayerInc.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\VertexControl\ReliefTerrainPMTriplanarStandalone Tessellation(Phong).shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\CanyonMountainBlend.txt" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\2xParallaxMapped\GeometryBlend_PM_2VertexPaint.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\AerialPerspectiveSimple.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Shaders\TexturedPlanet.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\Massive.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_FlowMap_2VertexPaint U5.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_FlowMap_2VertexPaint_HB U5.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_NoisesAdvanced.cginc" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\AdvancedMountains.txt" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Resources\Modules\FirstAttemptTerrainComposer.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_FlowMap_HB U5.shader" />
+     <None Include="Assets\3rd Party\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Standard\GeomBlend_StandardSpecular.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\SkyCompositionInc.cginc" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\CloudVolumeShadow.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Shaders\TexturedPlanetColorMap.shader" />
+     <None Include="Assets\MORPH3D\Content\Vendor\Unity\Volund\Features\Hair\Hair_UnityStandardCore.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Internal\ReliefTerrainBlendBaseCutout.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\3rd Party\Voxeland\Shaders\Highlight.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\DownsampleZ.shader" />
+     <None Include="Assets\TerrainComposer2\Shaders\Compute\FlattenTerrain.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\AerialPerspectiveNoneInc.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\ParallaxMapped\GeometryBlend_PM.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_2VertexPaint_HB U5.shader" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Shaders\Particle Multiply.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\AerialPerspectiveNone.shader" />
+     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_Noise2.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Internal\ReliefTerrainGeometryBlendBase.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\ComposeReflection.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders_Release\AerialPerspectiveSimple.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\PlayMaker\Versions\readme.txt" />
+     <None Include="Assets\MORPH3D\Content\Vendor\Unity\Volund\Features\UniqueShadow\UniqueShadow_DepthOnly.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\ReliefTerrain-FarOnly.shader" />
+     <None Include="Assets\3rd Party\PlanetaryTerrain\Graphics\Atmosphere\Atmosphere Inverted.shader" />
+     <None Include="Assets\3rd Party\Buildr\Textures\textures.xml" />
+     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_Compute.compute" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\RTP_AddBase.cginc" />
+     <None Include="Assets\TerrainComposer2\ReadMe.txt" />
+     <None Include="Assets\Nuaj\Resources\Shaders\Sky\BuildDensityTexture.shader" />
+     <None Include="Assets\3rd Party\0000 ats V2 package\readme_vertexLitShader.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\Water\WaterShader.shader" />
+     <None Include="Assets\3rd Party\Voxeland\Shaders\Grass.shader" />
+     <None Include="Assets\Standard Assets\3rdParty\Bootcamp\Shaders\alpha_2sided.shader" />
+     <None Include="Assets\Nuaj\Resources\Shaders\RenderLightCookie.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+     <None Include="Assets\Main Assets\Materials\Stellar\Stellar Skybox Textures\Stellar Skybox Shader.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.PlaymodeTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="Behave.Unity.Assets">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/3rd Party/Behave/Behave.Unity.Assets.dll</HintPath>
+ </Reference>
+ <Reference Include="Behave.Unity.Runtime">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/3rd Party/Behave/Behave.Unity.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Behave">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/3rd Party/Behave/Compatibility/Behave.dll</HintPath>
+ </Reference>
+ <Reference Include="M3DIMPORT_DLL">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/MORPH3D/Scripts/Plugins/M3DIMPORT_DLL.dll</HintPath>
+ </Reference>
+ <Reference Include="M3D_DLL">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/MORPH3D/Scripts/Plugins/M3D_DLL.dll</HintPath>
+ </Reference>
+ <Reference Include="ConditionalExpression">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
+ </Reference>
+ <Reference Include="ConditionalExpressionEditor">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/PlayMaker/Editor/ConditionalExpressionEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditorResources">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMaker">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+ </Reference>
+ <Reference Include="XInputDotNetPure">
+ <HintPath>C:/Unity/Projects/Dinos And Zombies/Assets/Plugins/x86_64/XInputDotNetPure.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{AA76A99F-EECF-00C4-C8CC-877ED7554265}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
